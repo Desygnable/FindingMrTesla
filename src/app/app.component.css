@@ -1,0 +1,143 @@
+.dot {
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  border-radius: 50%;
+  background: #2e86de;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 0 5px rgba(84, 160, 255, 0.5);
+          box-shadow: 0 0 0 5px rgba(84, 160, 255, 0.5);
+}
+
+.dot-sm {
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  border-radius: 50%;
+  background: #2e86de;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 0 5px rgba(84, 160, 255, 0.5);
+          box-shadow: 0 0 0 5px rgba(84, 160, 255, 0.5);
+}
+
+.copyright {
+  margin-top: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  padding-right: 30px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 70px auto 100px;
+      grid-template-rows: 70px auto 100px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 100%;
+}
+
+.map-container {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  z-index: 1;
+}
+
+.location-container {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 2;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  background: white;
+  z-index: 10;
+  max-width: 576px;
+  padding: 15px;
+  margin: 15px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 4px 2px #2e86de;
+          box-shadow: 0 0 4px 2px #2e86de;
+}
+
+.location-container .title {
+  text-align: center;
+}
+
+.location-container .address {
+  text-align: center;
+  font-weight: 600;
+}
+
+.quote-container {
+  position: relative;
+  padding: 5px 50px;
+}
+
+.quote-container #quote {
+  color: rgba(204, 204, 204, 0.45);
+  font-size: 75px;
+  position: absolute;
+  top: -15px;
+  left: 24px;
+  z-index: -1;
+}
+
+.quote-container .desc {
+  text-align: justify;
+}
+
+.quote-container .author {
+  text-align: right;
+}
+
+.quote-container .author a, .quote-container .author a:visited {
+  color: #444;
+  text-decoration: none;
+}
+
+.background-image {
+  height: 360px;
+  background-position: bottom center;
+  background-size: cover;
+  margin: 0 -15px;
+}
+
+.background-image-overlay {
+  position: absolute;
+  z-index: 10;
+  height: 360px;
+  width: 546px;
+  margin: 0 -15px;
+  padding-right: 30px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+10,ffffff+50,ffffff+90&1+10,0+50,1+90 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, white), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(90%, white));
+  background: linear-gradient(to bottom, white 10%, rgba(255, 255, 255, 0) 50%, white 90%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+  /* IE6-9 */
+}
+/*# sourceMappingURL=app.component.css.map */
