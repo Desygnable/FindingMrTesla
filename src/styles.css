@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(/Users/Yuki4uma/Git/FindingMrTesla/src/assets/margin-padding.css);
+@font-face {
+  font-family: 'Tesla';
+  src: url("./assets/Tesla.otf") format("otf");
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Crimson Text', serif;
+  background: #fcfdfe;
+}
+
+.tesla,
+[tesla] {
+  font-family: 'Tesla', serif;
+}
+
+.poiret,
+[poiret] {
+  font-family: 'Poiret One', cursive;
+}
+
+.crimson,
+[crimson] {
+  font-family: 'Crimson Text', serif;
+}
+
+/** HELPER STYLES */
+.logo {
+  background: #fff;
+  padding: 15px 0;
+  z-index: 30;
+  margin: 5px;
+  margin-top: 15px;
+}
+
+.map {
+  height: 100%;
+  min-height: 600px;
+  padding: 0;
+}
+/*# sourceMappingURL=styles.css.map */
