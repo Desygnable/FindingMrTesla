@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { latLng, circle, polygon, marker } from 'leaflet';
+import { latLng, tileLayer, circle, polygon, marker } from 'leaflet';
 
 import '../assets/greyscale/tileLayer.Grayscale.js';
 
 /** They greyscale variable for Leaflet */
-declare var tileLayer;
+declare var grayscale;
 
 /** The App Component */
 @Component({
@@ -33,7 +33,7 @@ export class AppComponent {
   /** Leaflet */
   public options = {
     layers: [
-      tileLayer.grayscale('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      (tileLayer as any).grayscale('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
       })
     ],
@@ -43,7 +43,7 @@ export class AppComponent {
     center: latLng([40.742037, -73.987563])
   };
   public layers = [
-    circle([40.745342, -73.990191], { radius: 25, fillColor: '#2e86de', fillOpacity: .9, color: '#54a0ff', opacity: .6, weight: 15 }),
+    circle([40.745342, -73.990191], { radius: 25, fillColor: '#2e86de', fillOpacity: .9, color: '#2e86de', opacity: .6, weight: 15 }),
     marker([40.742037, -73.987563])
   ];
   public layersControl = {
